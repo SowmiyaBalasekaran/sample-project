@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import learnBasicUi from '../views/LearnBasicUI.vue'
+import sampleComponent from '../views/NameManupulationView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/ui-basics',
+    name: 'learnBasics',
+    component: learnBasicUi
+  },
+  {
+    path: '/sowmiya',
+    name: 'nameManupulation',
+    component: sampleComponent
   },
   {
     path: '/about',
