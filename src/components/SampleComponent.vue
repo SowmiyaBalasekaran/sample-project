@@ -30,7 +30,7 @@
             <p v-html="combinedName"></p>
             <br>
             Address :
-            <p id="resultAddress">{{ resultAddress }}</p>
+            <p :class="{'custom-color': resultAddress}">{{ resultAddress }}</p>
         </div>
     </div>
 </template>
@@ -60,9 +60,9 @@
         padding: 50px;
         margin: 100px;
         margin-left: 300px;
-//         .blue-text {
-//   color: #2C81B7;
-// }
+        .custom-color {
+  color: #2cb77f;
+}
       }
 }
 </style>
