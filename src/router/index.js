@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import learnBasicUi from '../views/LearnBasicUI.vue'
-import sampleComponent from '../views/NameManupulationView.vue'
+import HomePage from '../views/HomePage.vue'
+// import sampleComponent from '../views/NameManupulationView.vue'
 
 const routes = [
   {
@@ -10,15 +10,15 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/ui-basics',
-    name: 'learnBasics',
-    component: learnBasicUi
+    path: '/home-page',
+    name: 'homePage',
+    component: HomePage
   },
-  {
-    path: '/sowmiya',
-    name: 'nameManupulation',
-    component: sampleComponent
-  },
+  // {
+  //   path: '/sowmiya',
+  //   name: 'nameManupulation',
+  //   component: sampleComponent
+  // },
   {
     path: '/about',
     name: 'about',
